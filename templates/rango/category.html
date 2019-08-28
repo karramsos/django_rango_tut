@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load staticfiles %}
+
 <html>
     <head>
         <title>Rango</title>
@@ -20,6 +23,12 @@
             {% else %}
                 The specified category does not exist!
             {% endif %}
+        </div>
+         <div>
+            <a href="/rango/">Home</a><br />
+            <img src="{% static 'images/rango_poster.jpg' /%}"
+            alt="Picture of Rango" /><br />
+            
         </div>
     </body>
 </html>
