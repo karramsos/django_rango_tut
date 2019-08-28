@@ -19,7 +19,7 @@
             {% if categories %}
                 <ul>
                     {% for category in categories %}
-                        <li><a href="/rango/category/{{ category.slug }}/"> {{ category.name }}</a>
+                        <li><a href="/rango/category/{{ category.slug }}/"> {{ category.name }}</a> - {{ category.likes }}
                         </li>
                     {% endfor %}
                 </ul>
@@ -32,7 +32,7 @@
             {% if pages %}
                 <ul>
                     {% for page in pages %}
-                        <li><a href="{{ page.url }}/"> {{ page.title }}</a>
+                        <li><a href="{{ page.url }}/"> {{ page.title }}</a> - {{ page.views }}
                         </li>
                     {% endfor %}
                 </ul>
